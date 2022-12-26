@@ -19,3 +19,10 @@ Initialise given Project for git
     git add . 
     git commit -m "Initial Commit"
     git log
+
+#github Steps
+
+    1. create a new repo. on github
+    2. add origin and push origin
+    3. solve issue related to ssh-keygen
+    4. need to create ssh key and then add to github -> setting-> sshkeys -> new ssh key
