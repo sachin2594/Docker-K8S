@@ -1,0 +1,46 @@
+
+#list images
+docker images
+
+#list down the running containers
+docker ps
+
+docker image inspect 1e2a4274bc45
+
+#create Container from given image
+docker run -p 8080:8080 dockertest
+
+#list down alll the containers.
+docker ps -a
+
+#stop the running Container
+docker stop 56
+
+#we can run multiple instances of same image. 
+port 8082 ==> outside world
+port 8080 ==> Internal Container Port
+docker run -p 8082:8080 dockertest
+
+#start the existing container
+docker start image name
+
+#logs of given container
+docker logs containerId
+
+#attach given container for logs
+docker logs -f containerId
+
+#start the container in attach mode.
+docker start -a containerId
+
+#If you want to interact with the web container you need to use below command.
+docker start -a -i containerId
+
+#If you want to remove the container.
+docker rm containerId
+
+#if you want to remove the images
+docker rmi imageId
+
+
+
