@@ -1,0 +1,21 @@
+#Steps for configuring git for given Project.
+
+1. download the git 
+2. check the version in CMD if properly downloaded or not. git --version
+3. set the credentials by using below commands.
+    git config --global user.name "Sachin Jadhav"
+    git config --global user.email "sachinjadhav038@gmail.com"
+
+    Check the Credentials
+    git config --global user.name
+    git config --global user.email
+
+    you can also edit the configuration file and make the changes.
+    git config --global --edit
+
+
+Initialise given Project for git 
+    git init
+    git add . 
+    git commit -m "Initial Commit"
+    git log
